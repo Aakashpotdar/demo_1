@@ -13,3 +13,4 @@ sum=$(($r + $s + $a + $q + $w))
 av=$(($sum / $x))
 echo $r $a $s $q $w
 echo $av
+# practice_problems

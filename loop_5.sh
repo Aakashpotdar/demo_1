@@ -1,17 +1,12 @@
-#!/bin/sh -x
-echo "enter no. 10 or 100 or 1000"
-read number
+funcTest() {
+	echo $1
+	}
 
-
-if [ $number -eq 10 ]
+test=$( funcTest $((RANDOM%2)) )
+echo $test
+if [ $test -eq 1 ]
 then
-	echo "ten"
-elif [ $number -eq 100 ]
-then
-	echo "hundred"
-elif [ $number -eq 1000 ]
-then
-	echo "thousend"
+	echo "good"
 else
-	echo"wrong choice"
+	echo "bad"
 fi
